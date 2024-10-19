@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}{% endblock %}
+
+{% block links %}{% endblock %}
+
+{% block main %}
+<div class="index-page">
+    <section>
+        <h1 class="invisible-seo">Clases de Yoga en Barcelona y Psiconutrición</h1>
+        <h2 class="subtitulos">Tu espacio para conectar contigo y con tu cuerpo.</h2>
+    </section>
+
+    <section class="sobre-mes-millor-section">
+        <div class="titulo-texto-inicio">
+            <h2 class="titulos">MÉS MILLOR</h2>
+            <div class="texto-inicio texto">
+                <p>Centro de yoga y psiconutrición.</p>
+
+                <p>Te acompañamos a descubrir una versión más equilibrada, confiada y fuerte de ti misma.</p>
+                
+                <p>Expande tu potencial físico y mental, cultivando hábitos transformadores que te permitan avanzar en tu crecimiento personal, vivir mejor y disfrutar más de tu vida.</p>
+            </div>
+            <a href="{{ baseUri }}./sobre-mes-millor"><button type="submit" class="boton">Sobre Més Millor</button></a>
+        </div>
+        <div class="box">
+            <img src="{{ baseUri }}./static/images/yoga.png" alt="Sala de Yoga">
+        </div>
+    </section>
+    <section class="estoy-buscando">
+        <h1 class="titulos">Estoy buscando...</h1>
+        <div class="estoy-buscando-content">
+            <div class="imgnx">
+                <a href="{{ baseUri }}./clases-de-yoga">
+                    <img src="{{ baseUri }}./static/images/entrada.jpg" alt="">
+                    <p>YOGA</p>
+                </a>
+            </div>
+            <div class="imgnx">
+                <a href="{{ baseUri }}./psiconutricion">
+                    <img src="{{ baseUri }}./static/images/salon.jpg" alt="">
+                    <p>PSICONUTRICIÓN</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="imgny"><img src="" alt=""></div>
+</div>
+{% endblock %}

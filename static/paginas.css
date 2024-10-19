@@ -1,0 +1,135 @@
+:root {
+    --color1: #51a9e4;
+    --color2: #ffa600;
+    --color3: #d511cb;
+
+    --color1-claro: #b6d5e9;
+    --color2-claro:#ffca67;
+    --color3-claro: #ff74f8;
+
+    --gris0: #dedede;
+    --gris1: #b4b4b4;
+    --gris2: #636363;
+    --gris3: #363636;
+    --gris4: #1f1f1f;
+
+    --titulos-fs: 56px;
+    --subtitulos-fs: 50px;
+    --text-big: 24px;
+    --text-medium: 20px;
+    --text-small: 16px;
+
+    --titulos-fw: 500;
+    --subtitulos-fw: 400;
+    --text-fw: 300;
+
+    --titulos-lh: 1.7;
+    --subtitulos-lh: 1.6;
+    --text-lh: 1.5;
+
+    --titulos-ls: 1.5;
+    --subtitulos-ls: 1.5;
+    --text-ls: 1.4;
+
+    --titulos-color: var(--color1);
+    --subtitulos-color: var(--color2);
+    --text-color: var(--gris2);
+}
+
+/* INICIO */
+.invisible-seo {
+    color: white;
+    height: 0;
+}
+main {
+    width: 90%;
+    margin: 60px auto;
+}
+.index-page {
+    padding-top: 80px;
+}
+.index-page img {
+    width: 100%;
+    max-width: 100%;
+}
+.sobre-mes-millor-section {
+    display: flex;
+    width: 85%;
+    margin: 80px auto;
+}
+.texto-inicio {
+    width: 85%;
+    margin: 0 auto;
+}
+.titulo-texto-inicio button {
+    margin: 30px auto 30px 0;
+}
+.sobre-mes-millor-section p {
+    margin-bottom: 11px;
+}
+.sobre-mes-millor-section > div {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.box {
+    padding: 60px;
+}
+
+.estoy-buscando {
+    display: flex;
+    flex-direction: column;
+}
+.estoy-buscando-content {
+    display: flex;
+    flex-direction: row;
+}
+.estoy-buscando-content .imgnx {
+    width: 50%;
+}
+.estoy-buscando-content .imgnx a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.estoy-buscando-content .imgnx img {
+    width: 70%;
+}
+.estoy-buscando-content .imgnx p {
+    margin-top: 11px;
+    color: var(--gris2);
+    font-size: 24px;
+    font-weight: 500;
+}
+.imgny {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed var(--gris0);
+}
+
+@media screen and (max-width: 930px) {
+    .sobre-mes-millor-section {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 30px auto;
+    }
+    .sobre-mes-millor-section > div {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .estoy-buscando-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .estoy-buscando-content .imgnx {
+        width: 100%;
+        margin: 40px auto;
+        padding: 0;
+    }
+}
