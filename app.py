@@ -62,12 +62,12 @@ def yogaPostnatal():
 
 
 # 404 NOT FOUND Entrena tu mente cuida tu cuerpo
-@app.route("/entrena-tu-mente-cuida-tu-cuerpo")
+""" @app.route("/entrena-tu-mente-cuida-tu-cuerpo")
 def entrenaMenteCuidaCuerpo():
     baseUri = "."
     return render_template ("entrena-tu-mente-cuida-tu-cuerpo.html", baseUri=baseUri)
 
-""" # Contacto
+# Contacto
 @app.route("/contacto/")
 def contacto():
     baseUri = "."
