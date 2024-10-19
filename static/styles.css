@@ -1,0 +1,238 @@
+:root {
+    --color1: #51a9e4;
+    --color2: #ffa600;
+    --color3: #d511cb;
+
+    --color1-claro: #b6d5e9;
+    --color2-claro:#ffca67;
+    --color3-claro: #ff74f8;
+
+    --gris0: #dedede;
+    --gris1: #b4b4b4;
+    --gris2: #636363;
+    --gris3: #363636;
+    --gris4: #1f1f1f;
+
+    --titulos-fs: 56px;
+    --subtitulos-fs: 50px;
+    --text-big: 24px;
+    --text-medium: 20px;
+    --text-small: 16px;
+
+    --titulos-fw: 500;
+    --subtitulos-fw: 400;
+    --text-fw: 300;
+
+    --titulos-lh: 1.7;
+    --subtitulos-lh: 1.6;
+    --text-lh: 1.5;
+
+    --titulos-ls: 1.5;
+    --subtitulos-ls: 1.5;
+    --text-ls: 1.4;
+
+    --titulos-color: var(--color1);
+    --subtitulos-color: var(--color2);
+    --text-color: var(--gris2);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    width: 100%;
+}
+section {
+    margin-bottom: 60px;
+}
+a {
+    text-decoration: none;
+    color:  #353535;
+}
+button {
+    padding: 18px 25px;
+    border: none;
+    border-radius: 28px;
+    background-color: var(--color1);
+    color: white;
+    font-size: 16px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+.titulos {
+    color: var(--titulos-color);
+    font-size: var(--titulos-fs);
+    font-weight: var(--titulos-fw);
+    letter-spacing: var(--titulos-ls);
+    line-height: var(--titulos-lh);
+    text-align: center;
+    margin: 80px auto;
+}
+.subtitulos {
+    color: var(--subtitulos-color);
+    font-size: var(--subtitulos-fs);
+    font-weight: var(--subtitulos-fw);
+    letter-spacing: var(--subtitulos-ls);
+    line-height: var(--subtitulos-lh);
+    text-align: center;
+}
+.texto {
+    color: var(--text-color);
+    font-size: var(--text-medium);
+    font-weight: var(--text-fw);
+    letter-spacing: var(--text-ls);
+    line-height: var(--text-lh);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+header nav {
+    margin: auto;
+    font-size: 22px;
+}
+header nav a {
+    padding: 0 40px;
+}
+header .logo {
+    width: 86px;
+    height: 86px;
+    margin-left: 90px;
+    margin-right: auto;
+}
+header .inst-a {
+    margin-right: 50px;
+    margin-left: auto;
+}
+header .instagramButton img {
+    width: 13px;
+    height: 13px;
+    filter: invert(1);
+}
+.secondary {
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 38%;
+}
+.secondary input {
+    display: none;
+}
+.open-menu {
+    font-size: 52px;
+    color: var(--color3);
+}
+.open-menu:hover {
+    cursor: pointer;
+}
+header .secondary #check:checked ~ .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--color1-claro);
+    color: var(--gris2);
+}
+.dropdown a {
+    margin-top: 9px;
+}
+.dropdown {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--color1-claro);
+    display: flex;
+    margin-top: 80px;
+}
+footer .footer {
+    width: 85%;
+    margin: 20px auto 0 auto;
+    padding: 60px;
+    background-color: white;
+    display: flex;
+}
+footer p {
+    line-height: 2;
+    color: var(--gris1);
+    font-size: 16px;
+}
+.footer-item {
+    padding: 0 25px;
+}
+footer .footer .logo {
+    width: 106px;
+    height: 106px;
+}
+.footer-contacto h4 {
+    color: var(--gris2);
+    margin-bottom: 8px;
+}
+.contacto-info {
+    display: inline-block;
+}
+.contacto-info p {
+    white-space: nowrap;
+}
+footer .footer .footer-contacto .contacto-info button {
+    background-color: var(--color2-claro);
+    border-radius: 100%;
+    margin-top: 15px;
+}
+
+footer .footer .footer-contacto img {
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+@media screen and (max-width: 930px) {
+    .titulos {
+        margin: 30px auto;
+    }
+    button {
+        padding: 12px 16px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--color1);
+        color: white;
+        font-size: 14px;
+    }
+    header .logo {
+        width: 86px;
+        height: 86px;
+        margin-left: 40px;
+        margin-right: auto;
+    }
+    .secondary {
+        display: block;
+    }
+    header nav > a {
+        display: none;
+    }
+    header .inst-a {
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    footer .footer {
+        width: 100%;
+        margin: 40px auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .footer-item {
+        padding: 20px;
+    }
+}
