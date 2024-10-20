@@ -1,7 +1,115 @@
 {% extends "layout.html" %}
-{% block title %}- Clases de Yoga{% endblock %}
-{% block links %}{% endblock %}
 
+<!-- Si hace falta añadir algun link -->
+{% block links %} <!-- ___ --> {% endblock %}
+
+<!-- El titulo en layout.html contiene "Mes Millor". Si se deja el bloque vacio, aparecera solamente Mes Millor -->
+{% block title %} - Clases de Yoga{% endblock %}
+
+<!-- Bloque principal (todo menos cabecera y footer) -->
 {% block main %}
-
+    <div class="clases-de-yoga-page">
+        <div class="tresTitulos">
+            <h4>Escuchar · Conectar · Fluir</h4>
+            <h2 class="titulos">Clases de yoga</h2>
+            <p>Desconecta del estrés y del ruido mental para conectar contigo y mueve tu cuerpo como se merece.</p>
+        </div>
+        <section class="imagenTexto">
+            <img src="{{ baseUri }}./static/images/escalera.jpg" alt="">
+            <div class="texto">
+                <p> Practicar yoga nos hace vivir más vibrantes, tranquilxs y equillibrdxs. <b>No es magia.</b> Las cualidades que practicamos en la esterilla nos hacen desarrollar una mente más <b>enfocada</b>, más <b>flexibilidad</b> y <b>adaptación</b>, una <b>mirada</b> más <b>positiva</b>, <b>resiliencia</b> para encarar las adversidades y <b>vivir sin tantas preocupaciones</b>.</p>
+                <p>Te queremos acompañar a redescubrir cómo sostener el equilibro en las diferentes esferas de tu vida a través del yoga. Dirigirte hacia lo que te hace bien, <b>entrenar tu respiración para anclarte al presente y cuidar tu cuerpo con el movimiento que necesita.</b></p>
+                <p>Si quieres cultivar el equilibrio físico para tener más <b>estabilidad emocional, trabajar la fuerza en tu cuerpo y ser más resiliente</b> y <b>si quieres vivir más presente para crear relaciones sanas y disfrutar más de la vida</b>, este es tu sitio.</p>
+                <p><b>Acompañamos a lxs inconformistas que deciden transformar su vida a través del yoga, trasladando la práctica fuera de la esterilla.</b></p>
+            </div>
+        </section>
+        <section class="imagenTexto">
+            <img src="{{ baseUri }}./static/images/escalera.jpg" alt="">
+            <div class="texto">
+                <h2 class="titulo-seccion">Cómo son nuestras clases de yoga?</h2>
+                <ul>
+                    <li>
+                        <p><b>Grupos reducidos</b> (máx. 13) para <b>ajustarte en las posturas</b> y acompañarte de forma <b>personalizada</b>.</p>
+                    </li>
+                    <li>
+                        <p>Escoges <b>nivel e intensidad</b>, para que encuentres lo que necesites en cada momento.</p>
+                    </li>
+                    <li>
+                        <p><b>Flexibilidad horaria</b> para que puedas escoger cuando venir.</p>
+                    </li>
+                    <li>
+                        <p><b>Diferentes estilos</b> como hatha, hatha-vinyasa, yoga meditativo, restaurativo y slow para explorar la creatividad.</p>
+                    </li>
+                    <li>
+                        <p><b>Profesoras especializadas</b> en su disciplina, que te ajustarán para <b>profundizar en tu práctica y que avances con seguridad.</b></p>
+                    </li>
+                    <li>
+                        <p><b>Facilidad para reservar</b> en cualquier momento y lugar <b>desde la app</b>.</p>
+                    </li>
+                    <li>
+                        <p>Un <b>estudio luminoso y cómodo</b> para comprometerte con tu practica y que sea más fácil practicar acompañadx de una bonita comunidad.</p>
+                    </li>
+                    <li>
+                        <p>En nuestra app encontrarás <b>vídeos disponibles todo el tiempo</b> para practicar en tu casa y perfeccionar tu práctica.</p>
+                    </li>
+                </ul>
+                <a href="https://backoffice.bsport.io/login?membership=2744%20" target="_blank"><button class="boton">Inscríbete aquí</button></a>
+            </div>
+        </section>
+        <div class="separador-texto"><em>Empezamos a practicar yoga porque queremos cuidar nuestro cuerpo y nos sienta bien, y nos quedamos por todo lo que descubrimos del yoga</em></div>
+        <section class="imagenTexto">
+            <img src="{{ baseUri }}./static/images/escalera.jpg" alt="">
+            <div class="texto">
+                <h2 class="titulo-seccion cen">&#x0950;</h2>
+                <p>Integramos la práctica de posturas de yoga, con la  filosofía del yoga. <b>Vivir más despacio y más conscientes, desde el cuidado físico, emocional y energético.</b> En el cuerpo integramos todo lo que vivimos: nuestros <b>miedos, emociones, experiencias, reacciones, actitudes</b>. De la misma manera que el estrés intoxica el cuerpo de cortisol, cuando estamos reguladxs procesamos mejor la información, reaccionamos más positivamente y nuestro sistema inmune se refuerza.</p>
+                <p><b>Entrenar la respiración, para fluir con el movimiento, el cambio y la quietud</b>. Observar con más atención y escucha, ser más disciplinadas, compasivas y tratarnos mejor.</p>
+            </div>
+        </section>
+        <section class="horarios">
+            <h2 class="titulo-seccion">Horarios</h2>
+            <table class="general-text">
+                <thead>
+                    <tr>
+                        <th><img src="{{ baseUri }}./static/images/dia.png" alt="Dia"></th>
+                        <th><img src="{{ baseUri }}./static/images/hora.png" alt="Hora"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>09:30 / 18:00 / 19:30</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>09:30 / 18:00 / 19:30</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>19:30</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>09:30 / 18:00 / 19:30</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>07:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="rombos">
+            <div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div><div class="rombo"></div>
+        </div>
+        <section class="faq">
+            <h2 class="titulo-seccion">Nunca he practicado yoga y no tengo flexibilidad. ¿Puedo apuntarme a vuestras clases?</h2>
+            <p class="texto small">Claro! no necesitas haber practicado antes para venir a las clases. Si no tienes flexibilidad, no te preocupes, el yoga te irá muy bien. Irás ganando flexibilidad con la práctica constante. Ofrecemos clases de diferentes intensidades para que cada persona pueda practicar, independientemente de su edad, condición o experiencia. Si no sabes qué grupo te va mejor, pregúntanos.</p>
+            <h2 class="titulo-seccion">¿Qué tengo que hacer para apuntarme?</h2>
+            <p class="texto small">Sigue este <a href="https://backoffice.bsport.io/login?membership=2744">enlace</a> y escoge el bono mensual o trimestral que más te encaje.</p>
+            <h2 class="titulo-seccion">¿Practicar yoga me puede ayudar a reducir la ansiedad?</h2>
+            <p class="texto small">La práctica de yoga es una de las mejores técnicas para reducir el estrés y la ansiedad, tanto por los beneficios que tiene aprender a utilizar la respiración, como el efecto que tiene la práctica en el cuerpo, relajándolo.</p>
+            <h2 class="titulo-seccion">¿Puedo practicar yoga si tengo alguna lesión?</h2>
+            <p class="texto small">Depende de la lesión que tengas.<br>Muchas personas que sufren dolores de espalda, lumbalgia, fibromialgia o ciática, practican yoga para reducir los dolores y es muy recomendable hacerlo. Reforzando los músculos de la espalda, piernas, brazos y lubricando las articulaciones conseguimos aliviar o reducir los dolores. Contacta con nosotras para poder ayudarte.</p>
+        </section>
+    </div>
 {% endblock %}
