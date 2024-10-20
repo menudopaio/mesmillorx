@@ -13,23 +13,24 @@
     --gris3: #363636;
     --gris4: #1f1f1f;
 
-    --titulos-fs: 56px;
-    --subtitulos-fs: 50px;
-    --text-big: 24px;
-    --text-medium: 20px;
-    --text-small: 16px;
+    --titulos-fs: 45px;
+    --subtitulos-fs: 37px;
+    --text-big: 26px;
+    --citas-fs: 24px;
+    --text-medium: 16px;
+    --text-small: 14px;
 
-    --titulos-fw: 500;
-    --subtitulos-fw: 400;
+    --titulos-fw: 400;
+    --subtitulos-fw: 300;
     --text-fw: 300;
 
-    --titulos-lh: 1.7;
-    --subtitulos-lh: 1.6;
-    --text-lh: 1.5;
+    --titulos-lh: 1.5em;
+    --subtitulos-lh: 1.3em;
+    --text-lh: 2;
 
-    --titulos-ls: 1.5;
-    --subtitulos-ls: 1.5;
-    --text-ls: 1.4;
+    --titulos-ls: 1.4px;
+    --subtitulos-ls: 1.6px;
+    --text-ls: 1px;
 
     --titulos-color: var(--color1);
     --subtitulos-color: var(--color2);
@@ -85,7 +86,6 @@ button:hover {
 }
 .texto {
     color: var(--text-color);
-    font-size: var(--text-medium);
     font-weight: var(--text-fw);
     letter-spacing: var(--text-ls);
     line-height: var(--text-lh);
@@ -149,6 +149,304 @@ header .secondary #check:checked ~ .dropdown {
     display: none;
 }
 
+
+/* PSICONUTRICION */
+.psiconutricion {
+    width: 82%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.separador-texto {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 3px;
+    text-align: center;
+    color: var(--color1-claro);
+    font-size: var(--citas-fs);
+    font-weight: var(--citas-fw);
+    letter-spacing: var(--citas-ls);
+    line-height: var(--citas-lh);
+    border: 3px solid var(--color1);
+}
+.tresTitulos {
+    text-align: left;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.tresTitulos h4, .tresTitulos h2, .tresTitulos p {
+    margin-bottom: 15px;
+}
+.tresTitulos h4 {
+    font-size: var(--text-medium);
+    color: var(--gris2);
+    font-weight: 700;
+}
+.tresTitulos h2 {
+    text-align: left;
+    margin-top: 0;
+}
+.tresTitulos p {
+    width: 94%;
+    color: var(--gris1);
+    font-size: 24px;
+    font-weight: var(--subtitulos-fw);
+    letter-spacing: var(--subtitulos-ls);
+    line-height: var(--subtitulos-lh);
+}
+.psiconutricion .tresTitulos div {
+    height: 1px;
+    width: 60%;
+    margin: 25px auto;
+    border: none;
+    background-color: var(--color3);
+    transform: scaleY(0.85);
+}
+.imagenTexto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+.imagenTexto img {
+    margin-right: auto;
+    width: 50%;
+}
+.imagenTexto .texto {
+    margin-left: 50px;
+    width: 50%;
+    line-height: 2;
+}
+.titulo-seccion {
+    text-align: left;
+    margin-bottom: 30px;
+    color: var(--gris1);
+    font-size: 30px;
+    font-weight: var(--subtitulos-fw);
+    letter-spacing: var(--subtitulos-ls);
+    line-height: var(--subtitulos-lh);
+}
+.imagenTexto .texto p, .sobre-mes-millor-page ul li p {
+    margin-bottom: 15px;
+    text-align: left;
+    color: var(--text-color);
+    font-size: var(--text-small);
+}
+.imagenTexto .texto .justificado {
+    text-align: justify;
+}
+.tresFotos {
+    display: flex;              /* Utiliza Flexbox para alinear las imágenes horizontalmente */
+    justify-content: space-between;  /* Espacia uniformemente entre las imágenes */
+    gap: 15px;
+    width: 100%;                /* El contenedor ocupa el 100% del ancho */
+    box-sizing: border-box;      /* Asegura que el padding y el borde se incluyan en el ancho */
+    margin: 60px 0 40px 0;
+}
+.tresFotos img {
+    width: 30%;
+    height: auto;               /* Mantener la proporción de la imagen */
+}
+
+
+/* CLASES DE YOGA */
+.clases-de-yoga-page {
+    padding: 60px;
+}
+.clases-de-yoga-page .imagenTexto .texto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.clases-de-yoga-page .imagenTexto .texto ul li {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.clases-de-yoga-page .imagenTexto .texto ul li p {
+    display: inline;
+    text-align: left;
+}
+.clases-de-yoga-page .imagenTexto .texto a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.clases-de-yoga-page .imagenTexto .texto button {
+    text-align: center;
+}
+.cen { text-align: center; font-size: 60px; }
+
+.horarios { margin-bottom: 150px; }
+
+.horarios .titulo-seccion {
+    margin-top: 40px;
+    font-size: 46px;
+    font-weight: 500;
+}
+.horarios table {
+    width: 50%;
+    height: auto;
+    border-collapse: collapse;
+}
+.horarios th, .horarios td {
+    text-align: left;
+}
+.horarios th img {
+    width: 18px;
+    height: 18px;
+    /* filter: invert(1); */
+}
+.bold {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gris2);
+}
+.faq { margin-bottom: 40px; }
+.faq .titulo-seccion {
+    color: var(--color1-claro);
+    font-size: var(--text-big);
+    margin: 17px auto 9px auto;
+}
+.faq .texto {
+    line-height: 2;
+    color: var(--gris2);
+    font-size: var(--text-small);
+}
+.rombos {
+    width: 50%;
+    display: flex;
+    margin: 50px auto;
+}
+.rombo {
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    background-color: var(--color2-claro);
+    margin: 0 auto;
+}
+
+
+
+/* SOBRE MES MILLOR */
+.sobre-mes-millor-page {
+    padding: 60px 120px;
+}
+.sobre-mes-millor-page ul li {
+    list-style: none;
+}
+.sobre-mes-millor-page ul li p {
+    margin: 30px 0;
+}
+.sobre-mes-millor-page ul li p.titulito {
+    margin-top: 60px;
+}
+.sobre-mes-millor-page ul li ul li {
+    list-style: inside;
+    margin: 5px 20px;
+}
+.sobre-mes-millor-page ul li a, .clases-de-yoga-page .faq a {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+
+/* YOGA PARA EMBARAZADAS */
+.yoga-para-embarazadas-page {
+    width: 82%;
+    margin: 40px auto;
+}
+.yoga-para-embarazadas-page .noMostrar {
+    color: white;
+    margin: 0;
+    height: 1px;
+}
+.yoga-para-embarazadas-page h1 { text-align: center; }
+.yoga-para-embarazadas-page .titulos span {
+    color: var(--corp-clr-secondary);
+    font-size: calc(initial + 8px);
+}
+.porque-yoga-embarazo h1 {
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weigth);
+    color: var(--title-color);
+    letter-spacing: var(--title-letter-spacing);
+    line-height: var(--title-line-height);
+    width: 80%;
+    margin: 0 auto;
+}
+.yoga-para-embarazadas-page .horarios p {
+    width: 45%;
+    margin-top: 40px;
+}
+.yoga-para-embarazadas-page .horarios table {
+    width: 35%;
+}
+
+/* YOGA POSTNATAL */
+.intro-postnatal {
+    display: flex;
+}
+.intro-postnatal h1 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: var(--titulos-fs);
+    font-weight: var(--titulos-fw);
+    letter-spacing: var(--titulos-ls);
+    line-height: var(--titulos-lh);
+}
+.intro-postnatal img {
+    width: 50%;
+}
+.con-tu-bebe {
+    margin: 60px auto 60px auto;
+    width: 60%;
+}
+.con-tu-bebe h1 {
+    text-align: center;
+    font-size: 48px;
+}
+.con-tu-bebe div {
+    margin-bottom: 30px;
+}
+.yoga-postnatal-page .imagenTexto img {
+    width: 50%;
+}
+.yoga-postnatal-page .imagenTexto {
+    margin-bottom: 80px;
+}
+.yoga-postnatal-page .imagenTexto .texto {
+    padding: 30px;
+}
+.yoga-postnatal-page .imagenTexto .texto p {
+    width: 80%;
+}
+.yoga-postnatal-page .titulo, .yoga-postnatal-page .subtitulos {
+    line-height: 1.2;
+    letter-spacing: 1;
+    width: 65%;
+}
+.yoga-postnatal-page .titulo {
+    font-size: 52px;
+    font-weight: 400;
+
+}
+.yoga-postnatal-page .info-postnatal {
+    width: 45%;
+    margin-left: 100px;
+}
+.yoga-postnatal-page .info-postnatal p {
+    padding-left: 80px;
+}
+.yoga-postnatal-page .info-postnatal .no-button {
+    margin-bottom: 140px;
+}
+
+/* FOOTER */
 footer {
     width: 100%;
     background-color: var(--color1-claro);
@@ -198,6 +496,27 @@ footer .footer .footer-contacto img {
 @media screen and (max-width: 930px) {
     .titulos {
         margin: 30px auto;
+    }
+    .clases-de-yoga-page {
+        margin: 0;
+        padding: 0;
+    }
+    .imagenTexto {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .imagenTexto img {
+        width: 100%;
+        margin: 13px auto 32px auto;
+        padding: 0;
+    }
+    
+    .clases-de-yoga-page .imagenTexto .texto {
+        width: 90%;
+        margin: 13px auto;
+        padding: 0;
     }
     button {
         padding: 12px 16px;
