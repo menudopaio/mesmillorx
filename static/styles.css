@@ -13,11 +13,7 @@
     --gris3: #363636;
     --gris4: #1f1f1f;
 
-    --titulos-color: var(--color1);
-    --titulos-fs: 36px;
-    --titulos-fw: 400;
-    --titulos-ls: 1.4px;
-    --titulos-lh: 1.3;
+    
 
     --subtitulos-color: var(--color2);
     --subtitulos-fs: 36px;
@@ -105,6 +101,21 @@ header nav {
 }
 header nav a {
     padding: 0 40px;
+}
+header nav .dropdown2 {
+    display: none;
+}
+header nav .a-yoga:hover ~ .dropdown2 {
+    display: block;
+    top: 0;
+    height: auto;
+    background-color: #51a9e4;
+    border: 1px solid red;
+    color: black;
+}
+.dropdown2 a {
+    color: black;
+    background-color: #ffa600;
 }
 header .logo {
     width: 86px;
